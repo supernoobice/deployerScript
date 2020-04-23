@@ -55,7 +55,7 @@ require 'recipe/common.php';
 
 set('default_stage', 'production');
 
-host('jeffreydelara.com')
+host('domain.com')
   ->user('USER')
   ->stage('production')    
   ->set('deploy_path', '~/public_html');
@@ -66,7 +66,6 @@ task('pwd', function () {
 });
 task('goprod', function() {
   writeln('<info>Deploying...</info>');
-
 
   $appFiles = [
     'index.php',
